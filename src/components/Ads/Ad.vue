@@ -2,7 +2,7 @@
   <v-container>
     <v-layout row>
       <v-flex>
-        <v-card color="#FAFAFA" class="elevation-8 mb-3 mx-5">
+        <v-card color="#FAFAFA" class="elevation-8 mb-3">
           <v-img :src="ad.imageSrc" height="700px"></v-img>
           <v-card-text>
             <h1 class="headline mb-2">{{ad.title}}</h1>

@@ -2,12 +2,12 @@
   <v-container>
     <v-layout row>
       <v-flex xs12 sm10 md10 lg8 offset-lg2 offset-md1 offset-sm1>
-        <h2 class="text--secondary mb-4">Каталог приключений</h2>
+        <h2 class="text--secondary mb-3">Каталог приключений</h2>
 
-        <v-card color="#FAFAFA" class="elevation-3 mb-3" v-for="ad in myAds" :key="ad.id">
+        <v-card color="#FAFAFA" class="elevation-3 mb-3" v-for="ad in myAds" :key="ad.id" :to="'/ad/' + ad.id">
           <v-layout row>
-            <v-flex xs4 class="hidden-xs-only">
-              <v-img :src="ad.imageSrc" height="170px" style="margin: 2%"></v-img>
+            <v-flex>
+              <v-img :src="ad.imageSrc" style="min-height: 150px min-width: 200px"></v-img>
             </v-flex>
             <v-flex xs8>
               <v-card-text>
