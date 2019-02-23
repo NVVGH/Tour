@@ -7,7 +7,7 @@
         <v-card color="#FAFAFA" class="elevation-3 mb-3" v-for="ad in myAds" :key="ad.id" :to="'/ad/' + ad.id">
           <v-layout row>
             <v-flex>
-              <v-img :src="ad.imageSrc" style="min-height: 140px; min-width: 140px"></v-img>
+              <v-img :src="ad.imageSrc" style="height: 160px; min-width: 140px"></v-img>
             </v-flex>
             <v-flex xs8>
               <v-card-text>
